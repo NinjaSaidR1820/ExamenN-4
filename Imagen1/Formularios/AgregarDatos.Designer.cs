@@ -113,6 +113,7 @@
             this.rbFactura.TabStop = true;
             this.rbFactura.Text = "Factura de los Clientes";
             this.rbFactura.UseVisualStyleBackColor = true;
+            this.rbFactura.CheckedChanged += new System.EventHandler(this.rbFactura_CheckedChanged);
             // 
             // rbExistenciaYNombre
             // 

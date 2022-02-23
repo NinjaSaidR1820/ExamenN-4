@@ -230,5 +230,10 @@ namespace Imagen1.Formularios
         {
             
         }
+
+        private void rbFactura_CheckedChanged(object sender, EventArgs e)
+        {
+            Factura();
+        }
     }
 }
