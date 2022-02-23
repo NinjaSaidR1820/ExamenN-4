@@ -23,6 +23,9 @@ namespace Imagen1.Formularios
         Productos productos;
 
 
+        int Facturas = 0;
+
+
         int Unidades = 0;
         int PrecioProduct = 0;
 
@@ -132,6 +135,19 @@ namespace Imagen1.Formularios
             }
         }
 
+        public void NombreClientes()
+        {
+
+            IEnumerable<Clientes> nom = from d in listaClientes select d;
+
+            foreach (Clientes d in nom)
+            {
+
+                txtCONSULTA.AppendText(d.info1());
+            }
+        }
+
+
 
         public void Factura()
         {
@@ -155,6 +171,10 @@ namespace Imagen1.Formularios
                 txtCONSULTA.AppendText(i.info3());
 
             }
+
+
+            Facturas++;
+
         }
 
 
@@ -235,6 +255,20 @@ namespace Imagen1.Formularios
         {
             txtCONSULTA.Clear();
             Factura();
+        }
+
+        private void rbClientes_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCONSULTA.Clear();
+            NombreClientes();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCONSULTA.Clear();
+            txtCONSULTA.AppendText("El Total de Facturas Es De " +Facturas);
+
+
         }
     }
 }

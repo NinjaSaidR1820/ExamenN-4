@@ -72,6 +72,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.rbClientes = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.tabPage4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
@@ -92,6 +94,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.radioButton1);
+            this.tabPage4.Controls.Add(this.rbClientes);
             this.tabPage4.Controls.Add(this.rbFactura);
             this.tabPage4.Controls.Add(this.rbExistenciaYNombre);
             this.tabPage4.Controls.Add(this.txtCONSULTA);
@@ -106,7 +110,7 @@
             // rbFactura
             // 
             this.rbFactura.AutoSize = true;
-            this.rbFactura.Location = new System.Drawing.Point(213, 44);
+            this.rbFactura.Location = new System.Drawing.Point(232, 44);
             this.rbFactura.Name = "rbFactura";
             this.rbFactura.Size = new System.Drawing.Size(132, 17);
             this.rbFactura.TabIndex = 4;
@@ -120,10 +124,10 @@
             this.rbExistenciaYNombre.AutoSize = true;
             this.rbExistenciaYNombre.Location = new System.Drawing.Point(44, 44);
             this.rbExistenciaYNombre.Name = "rbExistenciaYNombre";
-            this.rbExistenciaYNombre.Size = new System.Drawing.Size(117, 17);
+            this.rbExistenciaYNombre.Size = new System.Drawing.Size(182, 17);
             this.rbExistenciaYNombre.TabIndex = 1;
             this.rbExistenciaYNombre.TabStop = true;
-            this.rbExistenciaYNombre.Text = "ExistenciaYNombre";
+            this.rbExistenciaYNombre.Text = "Nombre de Producto y Existencia";
             this.rbExistenciaYNombre.UseVisualStyleBackColor = true;
             this.rbExistenciaYNombre.CheckedChanged += new System.EventHandler(this.rbExistenciaYNombre_CheckedChanged);
             // 
@@ -498,6 +502,30 @@
             this.progressBar3.TabIndex = 24;
             this.progressBar3.Click += new System.EventHandler(this.progressBar3_Click);
             // 
+            // rbClientes
+            // 
+            this.rbClientes.AutoSize = true;
+            this.rbClientes.Location = new System.Drawing.Point(385, 44);
+            this.rbClientes.Name = "rbClientes";
+            this.rbClientes.Size = new System.Drawing.Size(62, 17);
+            this.rbClientes.TabIndex = 5;
+            this.rbClientes.TabStop = true;
+            this.rbClientes.Text = "Clientes";
+            this.rbClientes.UseVisualStyleBackColor = true;
+            this.rbClientes.CheckedChanged += new System.EventHandler(this.rbClientes_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(54, 82);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(90, 17);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "TotalFacturas";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
             // AgregarDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -570,5 +598,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.RadioButton rbClientes;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
