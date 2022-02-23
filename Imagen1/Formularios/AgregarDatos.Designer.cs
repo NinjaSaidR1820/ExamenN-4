@@ -31,10 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbFactura = new System.Windows.Forms.RadioButton();
             this.rbExistenciaYNombre = new System.Windows.Forms.RadioButton();
             this.txtCONSULTA = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -95,10 +92,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.radioButton5);
-            this.tabPage4.Controls.Add(this.radioButton4);
-            this.tabPage4.Controls.Add(this.radioButton3);
-            this.tabPage4.Controls.Add(this.radioButton2);
+            this.tabPage4.Controls.Add(this.rbFactura);
             this.tabPage4.Controls.Add(this.rbExistenciaYNombre);
             this.tabPage4.Controls.Add(this.txtCONSULTA);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -109,49 +103,16 @@
             this.tabPage4.Text = "Consultas";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rbFactura
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(213, 90);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(213, 44);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(44, 142);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(44, 90);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbFactura.AutoSize = true;
+            this.rbFactura.Location = new System.Drawing.Point(213, 44);
+            this.rbFactura.Name = "rbFactura";
+            this.rbFactura.Size = new System.Drawing.Size(132, 17);
+            this.rbFactura.TabIndex = 4;
+            this.rbFactura.TabStop = true;
+            this.rbFactura.Text = "Factura de los Clientes";
+            this.rbFactura.UseVisualStyleBackColor = true;
             // 
             // rbExistenciaYNombre
             // 
@@ -167,14 +128,13 @@
             // 
             // txtCONSULTA
             // 
-            this.txtCONSULTA.Location = new System.Drawing.Point(44, 239);
+            this.txtCONSULTA.Location = new System.Drawing.Point(44, 122);
             this.txtCONSULTA.Multiline = true;
             this.txtCONSULTA.Name = "txtCONSULTA";
             this.txtCONSULTA.ReadOnly = true;
             this.txtCONSULTA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtCONSULTA.Size = new System.Drawing.Size(423, 140);
             this.txtCONSULTA.TabIndex = 0;
-            this.txtCONSULTA.Text = "s";
             // 
             // tabPage3
             // 
@@ -604,10 +564,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbFactura;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar2;

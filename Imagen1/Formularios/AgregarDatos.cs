@@ -116,21 +116,46 @@ namespace Imagen1.Formularios
 
         #endregion
 
+
+
+        #region LINQ
+
         public void nombreyExistencia()
         {
 
             IEnumerable<Productos> nom = from d in listaProductos select d;
 
-            foreach(Productos d in nom)
+            foreach (Productos d in nom)
             {
 
                 txtCONSULTA.AppendText(d.xDNombreYExistencia());
             }
         }
 
-        #region LINQ
 
+        public void Factura()
+        {
 
+            IEnumerable<Productos> nom = from d in listaProductos select d;
+            IEnumerable<Pedidos> nom2 = from d in listaPedidos select d;
+            IEnumerable<Clientes> nom3 = from d in listaClientes select d;
+
+            foreach (Clientes i in nom3)
+            {
+                txtCONSULTA.AppendText(i.info1());
+
+            }
+            foreach (Productos i in nom)
+            {
+                txtCONSULTA.AppendText(i.info2());
+
+            }
+            foreach (Pedidos i in nom2)
+            {
+                txtCONSULTA.AppendText(i.info3());
+
+            }
+        }
 
 
         #endregion

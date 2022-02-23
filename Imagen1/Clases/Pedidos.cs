@@ -43,7 +43,7 @@ namespace Imagen1.Clases
         
         public DateTime FechaDeVenta { get => fechaDeVenta; set => fechaDeVenta = value; }
 
-        public string info2()
+        public string info3()
         {
 
             return CodigoVenta + " " + Cantidad + " " + FechaDeVenta;
