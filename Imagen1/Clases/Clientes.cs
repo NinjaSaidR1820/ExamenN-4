@@ -38,7 +38,7 @@ namespace Imagen1.Clases
         public string info1()
         {
 
-            return CodigoCliente + " " + NombreCliente + " " + ApellidoCliente;
+            return "Codigo de Cliente "+CodigoCliente +"\r\n" + "Nombre " + NombreCliente + " "+ApellidoCliente+ "\r\n";
 
         }
        

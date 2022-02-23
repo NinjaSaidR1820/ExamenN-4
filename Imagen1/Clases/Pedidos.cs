@@ -46,7 +46,7 @@ namespace Imagen1.Clases
         public string info3()
         {
 
-            return CodigoVenta + " " + Cantidad + " " + FechaDeVenta;
+            return "Codigo de Venta "+CodigoVenta + "\r\n"+ "Cantidad Comprada " + Cantidad + "\r\n"+"Fecha de Pedido " + FechaDeVenta + "\r\n";
         }
 
     }

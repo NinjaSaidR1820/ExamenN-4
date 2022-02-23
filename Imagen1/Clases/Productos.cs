@@ -44,7 +44,7 @@ namespace Imagen1.Clases
         public string info2()
         {
 
-            return CodigoProductoP +" " + NombreProducto + " " +PrecioUnidad;
+            return "Codigo de producto "+CodigoProductoP + "\r\n"+"Nombre de Producto " + NombreProducto + "\r\n"+"Precio Unitario" +PrecioUnidad + "\r\n";
         }
 
     }
