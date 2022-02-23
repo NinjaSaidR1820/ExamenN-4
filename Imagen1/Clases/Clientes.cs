@@ -33,6 +33,14 @@ namespace Imagen1.Clases
         public int CodigoCliente { get => codigoCliente; set => codigoCliente = value; } 
         public string NombreCliente { get => nombreCliente; set => nombreCliente = value; }
         public string ApellidoCliente { get => apellidoCliente; set => apellidoCliente = value; }
+
+
+        public string info1()
+        {
+
+            return CodigoCliente + " " + NombreCliente + " " + ApellidoCliente;
+
+        }
        
     }
 }

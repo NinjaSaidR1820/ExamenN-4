@@ -94,23 +94,39 @@ namespace Imagen1.Formularios
         #region Botones
         private void btnIngresarPedido_Click(object sender, EventArgs e)
         {
+            this.progressBar1.Visible = true;
+            this.timer1.Start();
             guardarPedido();
             GetSubTotal();
         }
 
         private void btnGuardarCliente_Click(object sender, EventArgs e)
         {
+            this.progressBar2.Visible = true;
+            this.timer1.Start();
             guardarCliente();
         }
         
         private void btnIngresarProductos_Click(object sender, EventArgs e)
         {
-
+            this.progressBar3.Visible = true;
+            this.timer1.Start();
             guardarProducto();
         }
 
         #endregion
 
+        public void nombreyExistencia()
+        {
+
+            IEnumerable<Productos> nom = from d in listaProductos select d;
+
+            foreach(Productos d in nom)
+            {
+
+                txtCONSULTA.AppendText(d.xDNombreYExistencia());
+            }
+        }
 
         #region LINQ
 
@@ -155,6 +171,39 @@ namespace Imagen1.Formularios
         private void txtSubTotal_TextChanged(object sender, EventArgs e)
         {
             GetSubTotal();
+        }
+
+        private void rbExistenciaYNombre_CheckedChanged(object sender, EventArgs e)
+        {
+
+            txtCONSULTA.Clear();
+            nombreyExistencia();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.progressBar1.Increment(8);
+            if(progressBar1.Value >= progressBar1.Maximum)
+            {
+                timer1.Stop();
+                
+
+            }
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void progressBar2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void progressBar3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

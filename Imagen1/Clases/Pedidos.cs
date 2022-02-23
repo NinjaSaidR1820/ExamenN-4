@@ -13,7 +13,7 @@ namespace Imagen1.Clases
         int codigoVenta;
         int codigoCliente;
         int cantidad;
-        int subtotal;
+        
         DateTime fechaDeVenta;
 
         public Pedidos()
@@ -26,7 +26,7 @@ namespace Imagen1.Clases
 
         }
 
-        public Pedidos(int codigoproduct, int codigoventa, int codigocliente, int cantidad,DateTime fecha, int subtotal)
+        public Pedidos(int codigoproduct, int codigoventa, int codigocliente, int cantidad,DateTime fecha)
         {
             this.CodigoProducto = codigoproduct;
             this.CodigoVenta = codigoventa;
@@ -42,6 +42,12 @@ namespace Imagen1.Clases
         public int Cantidad { get => cantidad; set => cantidad = value; }
         
         public DateTime FechaDeVenta { get => fechaDeVenta; set => fechaDeVenta = value; }
-        public int Subtotal { get => subtotal; set => subtotal = value; }
+
+        public string info2()
+        {
+
+            return CodigoVenta + " " + Cantidad + " " + FechaDeVenta;
+        }
+
     }
 }

@@ -34,5 +34,18 @@ namespace Imagen1.Clases
         public string NombreProducto { get => nombreProducto; set => nombreProducto = value; }
         public int PrecioUnidad { get => precioUnidad; set => precioUnidad = value; }
         public int UnidadEnExistencia { get => unidadEnExistencia; set => unidadEnExistencia = value; }
+
+
+        public string xDNombreYExistencia()
+        {
+
+            return NombreProducto + " Tiene en existencia: " + UnidadEnExistencia;
+        }
+        public string info2()
+        {
+
+            return CodigoProductoP +" " + NombreProducto + " " +PrecioUnidad;
+        }
+
     }
 }
